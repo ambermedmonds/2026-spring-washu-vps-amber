@@ -14,6 +14,15 @@
             margin:auto;
         }
 
+        #hero {
+            background-color: #C51130;
+        }
+
+        #hero img {
+            margin:auto;
+            display:block;
+        }
+
         #nav-bar {
             position:relative;
             width:100%;
@@ -22,7 +31,6 @@
         #nav-bar ul {
             position:relative;
             display:flex;
-            align-items:center;
             justify-content:center;
             list-style:none;
             margin:50px 30px;
@@ -31,8 +39,8 @@
         }
 
         #nav-bar a {
-            color:white;
             background-color:#C51130;
+            color:white;
             text-decoration:none;
             padding:10px 20px;
         }
@@ -42,20 +50,17 @@
             font-family:'Julius Sans One', sans-serif;
             font-size:3em;
             text-align:center;
-            padding:40px 20px;
-            margin:0px;
+            display:none;
         }
 
         h2 {
+            font-size:36px;
             font-weight:bolder;
+            line-height:10px;
         }
 
         h3 {
             text-decoration: underline;
-        }
-
-        #hero {
-            background-color: #C51130;
         }
 
         .container {
@@ -64,13 +69,14 @@
             margin:50px 50px;
         }
 
-        .location-subheader {
+        .subheader {
             font-weight:bold;
         }
     </style>
 </head>
 <body>
     <section id="hero">
+        <img src="assets/nudo-logo.png" width="30%">
         <h1>Nudo House</h1>
     </section>
 
@@ -79,6 +85,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#locations">Locations</a></li>
+            <li><a href="#faqs">FAQs</a></li>
         </ul>
     </nav>
 
@@ -277,16 +284,16 @@
         <div id="CC">
             <h3>Creve Coeur</h3>
             <p>
-                <span class="location-subheader">Address:</span> <br>
+                <span class="subheader">Address:</span> <br>
                 11423 Olive Blvd Saint Louis, MO 63141 <br>
             </p>
             <p>
-                <span class="location-subheader">Hours:</span> <br> 
+                <span class="subheader">Hours:</span> <br> 
                 Monday to Saturday: 11am to 9pm <br>
                 Closed Sundays
             </p>
             <p>
-                <span class="location-subheader">Contact:</span> <br>
+                <span class="subheader">Contact:</span> <br>
                 (314) 274-8046
             </p>
         </div>
@@ -294,20 +301,34 @@
         <div id="DL">
             <h3>Delmar Loop</h3>
             <p>
-                <span class="location-subheader">Address:</span> <br>
+                <span class="subheader">Address:</span> <br>
                 6105-A Delmar Blvd Saint Louis, MO 63112 <br>
             </p>
             <p>
-                <span class="location-subheader">Hours:</span> <br> 
+                <span class="subheader">Hours:</span> <br> 
                 Tuesday to Saturday: 11am to 9pm <br>
                 Sunday: 12pm to 9pm <br>
                 Closed Mondays <br>
             </p>
             <p>
-                <span class="location-subheader">Contact:</span> <br>
+                <span class="subheader">Contact:</span> <br>
                 (314) 370-6970
             </p>
         </div>
+    </section>
+
+    <section id="faqs" class="container">
+        <h2>FAQs</h2>
+        <p><span class="subheader">Do you take reservations?</span><br>
+        Our restaurant is seated on a first-come, first-serve basis. Reservations are only accepted for parties of eight or more. Please call us to arrange a large party.</p>
+        <p><span class="subheader">Do you offer delivery?</span><br>
+        Nudo House is available for delivery through the Uber Eats app.</p>
+        <p><span class="subheader">Do you accommodate dietary restrictions?</span><br>
+        Nudo House has options for many dietary needs. some of our dishes are already gluten free, vegetarian, vegan, etc, and our staff is fully trained to help you navigate the menu and select proper dishes to suit your needs and tastes.
+        </p>
+        <p><span class="subheader">Do you offer a full bar?</span><br>
+        Nudo House serves a selection of wine, beer, canned cocktails, and sake, but we do not have a full bar.
+        </p>
     </section>
     
 </body>
