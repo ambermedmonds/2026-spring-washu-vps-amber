@@ -9,174 +9,172 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 
     <style>
-
-        body {
-            background-color: #C51130;
-        }
-
-        .content {
-            margin:30px 150px;
-            background-color: white;
-        }
-
         h1 {
             font-family:'Julius Sans One', sans-serif;
-            font-size:72px;
+            font-size:3em;
             text-align:center;
+            letter-spacing: 3px;
         }
 
         h2 {
-            font-family:sans-serif;
-            text-transform:lowercase;
+            font-family:'Julius Sans One', sans-serif;
+            font-size:2em;
+            font-weight:bolder;
         }
 
         h3 {
-            font-family:sans-serif;
-            text-transform:lowercase;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform:uppercase;
         }
 
         p {
-            font-family:sans-serif;
-            margin: 5px 20px ;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
         #about {
             background-color: #C51130;
             color:white;
-            padding-bottom:10px;
+            padding:10px;
         }
 
         #menu {
-            padding-bottom:30px;
+            padding:10px 30px;
         }
 
-        .menu-header {
-            color:#C51130;
-            font-size:40px;
-            font-weight:bolder;
-            text-align:center;
+        .menu-section {
+            padding-bottom:3px;
         }
 
         .menu-subheader {
             background-color: #C51130;
             color:white;
-            font-size:24px;
             padding: 5px 10px;
         }
 
         .menu-item {
-            color:#C51130;
-            font-weight:bold;
-        }
-
-        .item-price {
-            color:#C51130;
+            font-weight:bolder;
         }
 
         .item-description {
-            font-weight:lighter;
+            font-style:italic;
+        }
+
+        #location {
+            background-color: #C51130;
+            color:white;
+            padding:5px 30px;
+        }
+
+        .location-subheader {
+            text-decoration:underline;
+            margin-top: 30px;
+            margin-bottom:-10px;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <section id="about">
+    <section id="about">
         <h1>Nudo House</h1>
-        </section>
+    </section>
 
-        <section id="menu">
-            <h2 class="menu-header">Menu</h2>
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-section">
+            <h3><mark class="menu-subheader">not ramen</mark></h3>
+            <p><span class="menu-item">papaya salad (v) | $8.00</span><br>
+            <span class="item-description">green papaya, shrimp, pork, carrot, celery, cucumber, peanut, cilantro, fried shallot, nuoc nam</span></p>
+            <p><span class="menu-item">seasame nudo (v) | $5.00</span><br>
+            <span class="item-description">cold noodles, pickled carrot, cucumber, cilantro, ginger soy, seasame peanut sauce</span></p>
+            <p><span class="menu-item">vitenamese chicken salad (gf) | $8.00</span><br>
+            <span class="item-description">shredded chicken, napa cabbage, carrot, cucumber, peanut, cilantro, nuoc nam</span></p>
+            <p><span class="menu-item">hiyachi chuka | $8.00</span><br>
+            <span class="item-description">cole kale noodles, pickled carrot, pickled mushroom, cucumber, menma, pickled ginger, sesame peanut sauce, ginger soy</span></p>
+            <p><span class="menu-item">charred edamame | $5.00</span><br>
+            <span class="item-description">wok charred edamame, furikake</span></p>
+            <p><span class="menu-item">spring roll (1) (v, gf) | $2.50</span><br>
+            <span class="item-description">rice paper, lettuce, cilantro, rice noodle, hoisin, peanut sauce (not fried)</span></p>
+            <p><span class="menu-item">kimchi (v, gf) | $5.00</span><br>
+            <span class="item-description">napa cabbage, daikon radish feremented with ginger and chili</span></p>
+            <p><span class="menu-item">tamarind fried chicken | $8.00</span><br>
+            <span class="item-description">tempura fried chicken, tamarind sauce, napa slaw, fried shallot, green onion</span></p>
+            <p><span class="menu-item">tamarind tofu | $7.00</span><br>
+            <span class="item-description">abura aged tofu, assorted vegetables, tamarind sauce, fried shallot, green onion</span></p>
+            <p><span class="menu-item">veggie egg rolls (5) | $6.00</span><br>
+            <span class="item-description">fried crispy, served with nuoc nam</span></p>
+            <p><span class="menu-item">crispy chicken gyoza (5) | $6.00</span><br>
+            <span class="item-description">fried crispy, served with ginger soy sauce</span></p>
+            <p><span class="menu-item">tayoyaki | $8.00</span><br>
+            <span class="item-description">fried octopus balls, kewpie mayo, pickled ginger, bonito flakes</span></p>
+            <p><span class="menu-item">crunchy umami | $6.00</span><br>
+            <span class="item-description">crunchy brussels sprouts, chasu burnt ends, kelp salt</span></p>
+            <p><span class="menu-item">beef and broccoli | $14.00</span><br>
+            <span class="item-description">beef flank, noodles, broccoli, fried shallots, fried garlic, green onions, ginger</span></p>
+            <p><span class="menu-item">YOLO mein | $14.00</span><br>
+            <span class="item-description">pork, chicken, assorted vegetables, noodles, lo mein sauce, fried shallots, green onion</span></p>
+        </div>
 
-            <div>
-                <h3><mark class="menu-subheader">not ramen</mark></h3>
-                <p><span class="menu-item">papaya salad</span><span class="item-price"> - $8</span><br>
-                <span class="item-description">green papaya, shrimp, pork, carrot, celery, cucumber, peanut, cilantro, fried shallot, nuoc nam</span></p>
-                <p><span class="menu-item">seasame nudo</span><span class="item-price"> - $5</span><br>
-                <span class="item-description">cold noodles, pickled carrot, cucumber, cilantro, ginger soy, seasame peanut sauce</span></p>
-                <p><span class="menu-item">vitenamese chicken salad</span><span class="item-price"> - $8</span><br>
-                <span class="item-description">shredded chicken, napa cabbage, carrot, cucumber, peanut, cilantro, nuoc nam</span></p>
-                <p><span class="menu-item">seasame nudo</span><span class="item-price"> - $5</span><br>
-                <span class="item-description">cold noodles, pickled carrot, cucumber, cilantro, ginger soy, seasame peanut sauce</span></p>
-                <p><span class="menu-item">hiyachi chuka</span><span class="item-price"> - $8</span><br>
-                <span class="item-description">cole kale noodles, pickled carrot, pickled mushroom, cucumber, menma, pickled ginger, sesame peanut sauce, ginger soy</span></p>
-                <p><span class="menu-item">seasame nudo</span><span class="item-price"> - $5</span><br>
-                <span class="item-description">cold noodles, pickled carrot, cucumber, cilantro, ginger soy, seasame peanut sauce</span></p>
-                <p><span class="menu-item">charred edamame</span><span class="item-price"> - $5</span><br>
-                <span class="item-description">wok charred edamame, furikake</span></p>
-                <p><span class="menu-item">spring roll (1)</span><span class="item-price"> - $2.50</span><br>
-                <span class="item-description">rice paper, lettuce, cilantro, rice noodle, hoisin, peanut sauce (not fried)</span></p>
-                <p><span class="menu-item">kimchi</span><span class="item-price"> - $5</span><br>
-                <span class="item-description">napa cabbage, daikon radish feremented with ginger and chili</span></p>
-                <p><span class="menu-item">tamarind fried chicken</span><span class="item-price"> - $8</span><br>
-                <span class="item-description">tempura fried chicken, tamarind sauce, napa slaw, fried shallot, green onion</span></p>
-                <p><span class="menu-item">tamarind tofu</span><span class="item-price"> - $7</span><br>
-                <span class="item-description">abura aged tofu, assorted vegetables, tamarind sauce, fried shallot, green onion</span></p>
-                <p><span class="menu-item">veggie egg rolls (5)</span><span class="item-price"> - $6</span><br>
-                <span class="item-description">fried crispy, served with nuoc nam</span></p>
-                <p><span class="menu-item">crispy chicken gyoza (5)</span><span class="item-price"> - $6</span><br>
-                <span class="item-description">fried crispy, served with ginger soy sauce</span></p>
-                <p><span class="menu-item">tayoyaki</span><span class="item-price"> - $8</span><br>
-                <span class="item-description">fried octopus balls, kewpie mayo, pickled ginger, bonito flakes</span></p>
-                <p><span class="menu-item">crunchy umami</span><span class="item-price"> - $6</span><br>
-                <span class="item-description">crunchy brussels sprouts, chasu burnt ends, kelp salt</span></p>
-                <p><span class="menu-item">beef and broccoli</span><span class="item-price"> - $14</span><br>
-                <span class="item-description">beef flank, noodles, broccoli, fried shallots, fried garlic, green onions, ginger</span></p>
-                <p><span class="menu-item">YOLO mein</span><span class="item-price"> - $14</span><br>
-                <span class="item-description">pork, chicken, assorted vegetables, noodles, lo mein sauce, fried shallots, green onion</span></p>
-            </div>
+        <div class="menu-section">
+            <h3><mark class="menu-subheader">sandwiches</mark></h3>
+            <p><span class="menu-item">nudo banh mi | $7.00</span><br>
+            <span class="item-description">braised pork shoulder</span></p>
+            <p><span class="menu-item">chicken banh mi | $7.00</span><br>
+            <span class="item-description">butter braised chicken</span></p>
+            <p><span class="menu-item">banh mi pho di | $8.00</span><br>
+            <span class="item-description">pho-braised beef, hoisin, pho broth for dipping</span></p>
+            <p><span class="menu-item">belly banh-mer | $8.00</span><br>
+            <span class="item-description">tempura fried chicken, tamarind sauce</span></p>
+        </div>
 
-            <div>
-                <h3><mark class="menu-subheader">sandwiches</mark></h3>
-                <p><span class="menu-item">nudo banh mi</span><span class="item-price"> - $7</span><br>
-                <span class="item-description">braised pork shoulder</span></p>
-                <p><span class="menu-item">chicken banh mi</span><span class="item-price"> - $7</span><br>
-                <span class="item-description">butter braised chicken</span></p>
-                <p><span class="menu-item">banh mi pho di</span><span class="item-price"> - $8</span><br>
-                <span class="item-description">pho-braised beef, hoisin, pho broth for dipping</span></p>
-                <p><span class="menu-item">belly banh-mer</span><span class="item-price"> - $8</span><br>
-                <span class="item-description">tempura fried chicken, tamarind sauce</span></p>
-            </div>
+        <div class="menu-section">
+            <h3><mark class="menu-subheader">3-1-pho</mark></h3>
+            <p><span class="menu-item">pho beef (gf) | $16.00</span><br>
+            <span class="item-description">rare flank steak</span></p>
+            <p><span class="menu-item">pho chicken (gf) | $16.00</span><br>
+            <span class="item-description">shredded chicken</span></p>
+            <p><span class="menu-item">pho shrimp (gf) | $18.00</span><br>
+            <span class="item-description">shrimp</span></p>
+            <p><span class="menu-item">pho shizzle (gf) | $20.00</span><br>
+            <span class="item-description">rare flank steak, shredded chicken, and shrimp</span></p>
+            <p><span class="menu-item">pho beef deluxe (gf) | $20.00</span><br>
+            <span class="item-description">rare flank steak, beef meatballs, and tripe</span></p>
+        </div>
 
-            <div>
-                <h3><mark class="menu-subheader">3-1-pho</mark></h3>
-                <p><span class="menu-item">pho beef</span><span class="item-price"> - $16</span><br>
-                <span class="item-description">rare flank steak</span></p>
-                <p><span class="menu-item">pho chicken</span><span class="item-price"> - $16</span><br>
-                <span class="item-description">shredded chicken</span></p>
-                <p><span class="menu-item">pho shrimp</span><span class="item-price"> - $18</span><br>
-                <span class="item-description">shrimp</span></p>
-                <p><span class="menu-item">pho shizzle</span><span class="item-price"> - $20</span><br>
-                <span class="item-description">rare flank steak, shredded chicken, and shrimp</span></p>
-                <p><span class="menu-item">pho beef deluxe</span><span class="item-price"> - $20</span><br>
-                <span class="item-description">rare flank steak, beef meatballs, and tripe</span></p>
-            </div>
+        <div class="menu-section">
+            <h3><mark class="menu-subheader">ramen</mark></h3>
+            <p><span class="menu-item">classic nudo | $16.00</span><br>
+            <span class="item-description">tonkotsu broth, shoyu, chasu pork, menma, black garlic</span></p>
+            <p><span class="menu-item">hebrew hammer | $16.00</span><br>
+            <span class="item-description">chicken paitan, shoyu, braised chicken thigh, menma, bok choy, black garlic</span></p>
+            <p><span class="menu-item">o'miso spicy | $16.00</span><br>
+            <span class="item-description">tonkotsu broth, miso, nudo chili paste, chasu pork, bean sprouts, pickled mustard greens</span></p>
+            <p><span class="menu-item">shroomed out (v) | $14.00</span><br>
+            <span class="item-description">mushroom broth, king oyster mushrooms, bok choy, menma, black garlic</span></p>
+            <p><span class="menu-item">nduja bomb | $18.00</span><br>
+            <span class="item-description">classic nudo ramen kicked up with salume beddu nduja</span></p>
+            <p><span class="menu-item">curry up (v, gf) | $17.00</span><br>
+            <span class="item-description">yellow coconut curry, carrot, celery, onion, cilantro, fried shallot, peanuts</span></p>
+            <p><span class="menu-item">tantanmen | $18.00</span><br>
+            <span class="item-description">really spicy! sesame, chili, fermented tofu, ground pork, naruto fish cake, bean sprouts, fried shallot</span></p>
+        </div>
 
-            <div>
-                <h3><mark class="menu-subheader">ramen</mark></h3>
-                <p><span class="menu-item">classic nudo</span><span class="item-price"> - $16</span><br>
-                <span class="item-description">tonkotsu broth, shoyu, chasu pork, menma, black garlic</span></p>
-                <p><span class="menu-item">hebrew hammer</span><span class="item-price"> - $16</span><br>
-                <span class="item-description">chicken paitan, shoyu, braised chicken thigh, menma, bok choy, black garlic</span></p>
-                <p><span class="menu-item">o'miso spicy</span><span class="item-price"> - $16</span><br>
-                <span class="item-description">tonkotsu broth, miso, nudo chili paste, chasu pork, bean sprouts, pickled mustard greens</span></p>
-                <p><span class="menu-item">shroomed out</span><span class="item-price"> - $14</span><br>
-                <span class="item-description">mushroom broth, king oyster mushrooms, bok choy, menma, black garlic</span></p>
-                <p><span class="menu-item">nduja bomb</span><span class="item-price"> - $18</span><br>
-                <span class="item-description">classic nudo ramen kicked up with salume beddu nduja</span></p>
-                <p><span class="menu-item">curry up</span><span class="item-price"> - $17</span><br>
-                <span class="item-description">yellow coconut curry, carrot, celery, onion, cilantro, fried shallot, peanuts</span></p>
-                <p><span class="menu-item">tantanmen</span><span class="item-price"> - $18</span><br>
-                <span class="item-description">really spicy! sesame, chili, fermented tofu, ground pork, naruto fish cake, bean sprouts, fried shallot</span></p>
-            </div>
+        <div class="menu-section">
+            <h3><mark class="menu-subheader">kids</mark></h3>
+            <p><span class="menu-item">kids ramen | $6.00</span><br>
+            <span class="item-description">ramen noodles, choice of broth <br>with pork or chicken, add $1</span></p>
+            <p><span class="menu-item">kids pho | $5.00</span><br>
+            <span class="item-description">rice noodles, beef pho broth <br>with beef or chicken, add $2</span></p>
+        </div>
+    </section>
 
-            <div>
-                <h3><mark class="menu-subheader">kids</mark></h3>
-                <p><span class="menu-item">kids ramen</span><span class="item-price"> - $6</span><br>
-                <span class="item-description">ramen noodles, choice of broth *with pork or chicken, add $1</span></p>
-                <p><span class="menu-item">kids pho</span><span class="item-price"> - $5</span><br>
-                <span class="item-description">rice noodles, beef pho broth *with beef or chicken, add $2</span></p>
-            </div>
-        </section>
-    </div>
+    <section id="location">
+       <h2 class="location-hour-header">Locations & Hours</h2>
+       <h3 class="location-subheader">Visit Us</h3>
+       <p><b>Creve Coeur</b><br>11423 Olive Blvd Saint Louis, MO 63141</p>
+       <p><b>Delmar Loop</b><br>6105-A Delmar Blvd Saint Louis, MO 63112</p>
+       
+       <h3 class="location-subheader">Business Hours</h3>
+       <p><b>Creve Coeur </b><br>Monday - Saturday: 11am - 9pm<br>Closed Sunday <br></p>
+       <p><b>Delmar Loop </b><br>Tuesday - Saturday: 11am - 9pm<br>Sunday: 12pm - 9pm <br>Closed Monday<br></p>
+    </section>
 </body>
 </html>
