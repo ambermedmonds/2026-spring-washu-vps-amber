@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nudo House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            margin: auto;
+            font-family: "Poppins", 
+            sans-serif;
+            background-color: #F6F1E7;
+        }
+
+        h1 {
+            position: relative;
+            text-align: center;
+            font-size: 5em;
+            color: white;
+        }
+
+        h2 {
+            margin: 0 auto;
+            width: 66.66%;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            margin: 10px 0px;
+            text-decoration: underline;
+        }
+
+        p:last-child {
+            margin: 0;
+        }
+
+        .section {
+            padding: 30px 0 40px 0;
+        }
+
+        .container {
+            margin: auto;
+            width: 66.66%;
+        }
+
+        .subheader {
+            font-weight: 600;
+        }
+
+        /* NAVIGATION BAR */
+
+        #nav-bar {
+            margin: 0;
+            width: 100%;
+            min-height: 80px;
+            position: sticky;
+            top: 0px;
+            background-color: #C51130;
+        }
+
+        #nav-bar img {
+            position: relative;
+            float: left;
+            left: 10px;
+            height: 80px;
+        }
+
+        #nav-bar ul {
+            margin: 0;
+            display: flex;
+            padding: 30px 50px;
+            justify-content: right;
+            list-style: none;
+            gap: 40px;
+        }
+
+        #nav-bar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #nav-bar a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* HERO SECTION */
+        #hero {
+            min-height: 90vh;
+
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("https://images.squarespace-cdn.com/content/v1/5b9eb9e35cfd7967a7b5b659/1537295915738-9WXU5RMEOEKHFE6LXAVN/image-asset.jpeg");
+            background-position: right;
+            background-repeat: no-repeat;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ABOUT SECTION */
+
+        #about {
+            background-color: white;
+        }
+
+        /* MENU SECTION */
+
+        #menu {
+            background-color: white;
+        }
+
+        .col-container {
+            margin: auto;
+            width: 66.66%;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .col-container div {
+            width: 50%;
+        }
+
+        #menu h3 {
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            background-color: #C51130;
+            color: white;
+            text-decoration: none;
+        }
+
+        .item {
+            font-weight: 600;
+        }
+
+        .item-description {
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .dietary {
+            color: #C51130; 
+        }
+        
+        .note {
+            font-weight: 300;
+        }
+
+        /* FAQ SECTION */
+
+        details summary {
+            font-weight: 600;
+        }
+
+        details p:last-child {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="nav-bar">
+        <img src="assets/nudo-logo.png">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <h1>Nudo House</h1>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About</h2>
+
+        <div class="container">
+            <p>Nudo House is a fast-casual, pan-Asian eatery focused on great food and warm hospitality. Aromatic pho from decades-long family recipes and ramen uniquely created through the mentorship by one of Japan's foremost ramen chefs are the main attractions. The restaurant also features a variety of dishes with Vietnamese, Japanese, Chinese, and Filipino influences. The menu spans noodles and soups to sandwiches and salads, as well as popular favorites such as spring rolls and crab rangoon. Globally-inspired flavors of soft serve rotate weekly for those with a sweet tooth. Ultimately, Nudo is the celebration of how powerful food can be and fueled by that gratitude and inspiration for its ability to bring people together and make everyone feel at home anywhere, anytime.</p>
+        </div>
+    </section>
+
+    <section id="locations" class="section">
+        <h2>Locations</h2>
+
+        <div class="col-container">
+            <div class="first-col">
+                <h3>Delmar Loop</h3>
+                <p>
+                    <span class="subheader">Address:</span> <br>
+                    6105-A Delmar Blvd Saint Louis, MO 63112 <br>
+                </p>
+                <p>
+                    <span class="subheader">Hours:</span> <br> 
+                    Tuesday to Saturday: 11am to 9pm <br>
+                    Sunday: 12pm to 9pm <br>
+                    Closed Mondays <br>
+                </p>
+                <p>
+                    <span class="subheader">Contact:</span> <br>
+                    (314) 370-6970
+                </p>
+            </div>
+
+            <div class="second-col">
+                <h3>Creve Coeur</h3>
+                <p>
+                    <span class="subheader">Address:</span> <br>
+                    11423 Olive Blvd Saint Louis, MO 63141 <br>
+                </p>
+                <p>
+                    <span class="subheader">Hours:</span> <br> 
+                    Monday to Saturday: 11am to 9pm <br>
+                    Closed Sundays
+                </p>
+                <p>
+                    <span class="subheader">Contact:</span> <br>
+                    (314) 274-8046
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Menu</h2>
+
+        <div class="col-container">
+            <div class="first-col">
+                <h3>not ramen</h3>
+                <p>
+                    <span class="item">papaya salad <span class="dietary">(v)</span> - $8.00</span><br>
+                    <span class="item-description">green papaya, shrimp, pork, carrot, celery, cucumber, peanut, cilantro, fried shallot, nuoc nam</span>
+                </p>
+                <p>
+                    <span class="item">seasame nudo <span class="dietary">(v)</span> - $5.00</span><br>
+                    <span class="item-description">cold noodles, pickled carrot, cucumber, cilantro, ginger soy, seasame peanut sauce</span>
+                </p>
+                <p>
+                    <span class="item">vitenamese chicken salad <span class="dietary">(gf)</span> - $8.00</span><br>
+                    <span class="item-description">shredded chicken, napa cabbage, carrot, cucumber, peanut, cilantro, nuoc nam</span>
+                </p>
+                <p>
+                    <span class="item">hiyachi chuka - $8.00</span><br>
+                    <span class="item-description">cole kale noodles, pickled carrot, pickled mushroom, cucumber, menma, pickled ginger, sesame peanut sauce, ginger soy</span>
+                </p>
+                <p>
+                    <span class="item">charred edamame - $5.00</span><br>
+                    <span class="item-description">wok charred edamame, furikake</span>
+                </p>
+                <p>
+                    <span class="item">spring roll (1) <span class="dietary">(v, gf)</span> - $2.50</span><br>
+                    <span class="item-description">rice paper, lettuce, cilantro, rice noodle, hoisin, peanut sauce (not fried)</span>
+                </p>
+                <p>
+                    <span class="item">kimchi <span class="dietary">(v, gf)</span> - $5.00</span><br>
+                    <span class="item-description">napa cabbage, daikon radish feremented with ginger and chili</span>
+                </p>
+                <p>
+                    <span class="item">tamarind fried chicken - $8.00</span><br>
+                    <span class="item-description">tempura fried chicken, tamarind sauce, napa slaw, fried shallot, green onion</span>
+                </p>
+                <p>
+                    <span class="item">tamarind tofu - $7.00</span><br>
+                    <span class="item-description">abura aged tofu, assorted vegetables, tamarind sauce, fried shallot, green onion</span>
+                </p>
+                <p>
+                    <span class="item">veggie egg rolls (5) - $6.00</span><br>
+                    <span class="item-description">fried crispy, served with nuoc nam</span>
+                </p>
+                <p>
+                    <span class="item">crispy chicken gyoza (5) - $6.00</span><br>
+                    <span class="item-description">fried crispy, served with ginger soy sauce</span>
+                </p>
+                <p>
+                    <span class="item">tayoyaki - $8.00</span><br>
+                    <span class="item-description">fried octopus balls, kewpie mayo, pickled ginger, bonito flakes</span>
+                </p>
+                <p>
+                    <span class="item">crunchy umami - $6.00</span><br>
+                    <span class="item-description">crunchy brussels sprouts, chasu burnt ends, kelp salt</span>
+                </p>
+                <p>
+                    <span class="item">beef and broccoli - $14.00</span><br>
+                    <span class="item-description">beef flank, noodles, broccoli, fried shallots, fried garlic, green onions, ginger</span>
+                </p>
+                <p>
+                    <span class="item">YOLO mein - $14.00</span><br>
+                    <span class="item-description">pork, chicken, assorted vegetables, noodles, lo mein sauce, fried shallots, green onion</span>
+                </p>
+
+                <h3>kids</h3>
+                <p>
+                    <span class="item">kids ramen - $6.00</span><br>
+                    <span class="item-description">ramen noodles, choice of broth *with pork or chicken, add $1</span>
+                </p>
+                <p>
+                    <span class="item">kids pho - $5.00</span><br>
+                    <span class="item-description">rice noodles, beef pho broth *with beef or chicken, add $2</span>
+                </p>
+            </div>
+
+            <div class="second-col">
+                <h3>sandwiches</h3>
+                <p class="note">
+                    all banh mi come with chicken pate, garlic aioli, cucumber, jalapeno, pickled carrot, cilantro
+                </p>
+                <p>
+                    <span class="item">nudo banh mi - $7.00</span><br>
+                    <span class="item-description">braised pork shoulder</span>
+                </p>
+                <p>
+                    <span class="item">chicken banh mi - $7.00</span><br>
+                    <span class="item-description">butter braised chicken</span>
+                </p>
+                <p>
+                    <span class="item">banh mi pho di - $8.00</span><br>
+                    <span class="item-description">pho-braised beef, hoisin, pho broth for dipping</span>
+                </p>
+                <p>
+                    <span class="item">belly banh-mer - $8.00</span><br>
+                    <span class="item-description">tempura fried chicken, tamarind sauce</span>
+                </p>
+
+                <h3>3-1-pho</h3>
+                <p class="note">
+                    all pho comes with beef broth served with onion and a side of cilantro, thai basil, bean sprouts, jalapeno, and citrus
+                </p>
+                <p>
+                    <span class="item">pho beef <span class="dietary">(gf)</span> - $16.00</span><br>
+                    <span class="item-description">rare flank steak</span>
+                </p>
+                <p>
+                    <span class="item">pho chicken <span class="dietary">(gf)</span> - $16.00</span><br>
+                    <span class="item-description">shredded chicken</span>
+                </p>
+                <p>
+                    <span class="item">pho shrimp <span class="dietary">(gf)</span> - $18.00</span><br>
+                    <span class="item-description">shrimp</span>
+                </p>
+                <p>
+                    <span class="item">pho shizzle <span class="dietary">(gf)</span> - $20.00</span><br>
+                    <span class="item-description">rare flank steak, shredded chicken, and shrimp</span>
+                </p>
+                <p>
+                    <span class="item">pho beef deluxe <span class="dietary">(gf)</span> - $20.00</span><br>
+                    <span class="item-description">rare flank steak, beef meatballs, and tripe</span>
+                </p>
+
+                <h3>ramen</h3>
+                <p class="note">
+                    all ramen comes with green onion, sesame seeds, and ajitsuke tamago (ramen egg)
+                </p>
+                <p>
+                    <span class="item">classic nudo - $16.00</span><br>
+                    <span class="item-description">tonkotsu broth, shoyu, chasu pork, menma, black garlic</span>
+                </p>
+                <p>
+                    <span class="item">hebrew hammer - $16.00</span><br>
+                    <span class="item-description">chicken paitan, shoyu, braised chicken thigh, menma, bok choy, black garlic</span>
+                </p>
+                <p>
+                    <span class="item">o'miso spicy - $16.00</span><br>
+                    <span class="item-description">tonkotsu broth, miso, nudo chili paste, chasu pork, bean sprouts, pickled mustard greens</span>
+                </p>
+                <p>
+                    <span class="item">shroomed out <span class="dietary">(v)</span> - $14.00</span><br>
+                    <span class="item-description">mushroom broth, king oyster mushrooms, bok choy, menma, black garlic</span>
+                </p>
+                <p>
+                    <span class="item">nduja bomb - $18.00</span><br>
+                    <span class="item-description">classic nudo ramen kicked up with salume beddu nduja</span>
+                </p>
+                <p>
+                    <span class="item">curry up <span class="dietary">(v, gf)</span> - $17.00</span><br>
+                    <span class="item-description">yellow coconut curry, carrot, celery, onion, cilantro, fried shallot, peanuts</span>
+                </p>
+                <p>
+                    <span class="item">tantanmen - $18.00</span><br>
+                    <span class="item-description">really spicy! sesame, chili, fermented tofu, ground pork, naruto fish cake, bean sprouts, fried shallot</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs" class="section">
+        <h2>FAQs</h2>
+        <div class="container">
+            <details>
+                <summary>Do you take reservations?</summary>
+                <p> Our restaurant is seated on a first-come, first-serve basis. Reservations are only accepted for parties of eight or more. Please call us to arrange a large party.</p>
+            </details>
+            <details>
+                <summary>Do you offer delivery?</summary>
+                <p>Nudo House is available for delivery through the Uber Eats app.</p>
+            </details>
+            <details>
+                <summary>Do you accommodate dietary restrictions?</summary>
+                <p>Nudo House has options for many dietary needs. some of our dishes are already gluten free, vegetarian, vegan, etc, and our staff is fully trained to help you navigate the menu and select proper dishes to suit your needs and tastes.</p>
+            </details>
+            <details>
+                <summary>Do you offer a full bar?</summary>
+                <p>Nudo House serves a selection of wine, beer, canned cocktails, and sake, but we do not have a full bar.</p>
+            </details>
+        </div>
+    </section> 
+</body>
+</html>
