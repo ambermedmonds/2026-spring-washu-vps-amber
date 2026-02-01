@@ -17,7 +17,7 @@
             margin: auto;
             font-family: "Poppins", 
             sans-serif;
-            background-color: #F6F1E7;
+            background-color: white;
         }
 
         h1 {
@@ -88,14 +88,25 @@
 
         /* ABOUT SECTION */
 
-        #about {
-            background-color: white;
+        #about h3 {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            text-decoration: none;
+        }
+
+        #about img {
+            margin: 20px 0px 20px 40px; 
+            width: 330px;
+            float: right;
+            display: block;
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         /* MENU SECTION */
 
         #menu {
-            background-color: white;
+            background-color: #F6F1E7;
         }
 
         .col-container {
@@ -134,18 +145,6 @@
         .note {
             font-weight: 300;
         }
-
-        /* FAQ SECTION */
-
-        details summary {
-            font-weight: 600;
-        }
-
-        details p:last-child {
-            margin-top: 0px;
-            margin-bottom: 10px;
-            font-weight: 300;
-        }
     </style>
 </head>
 <body>
@@ -154,9 +153,8 @@
         <img src="assets/nudo-logo.png">
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#locations">Locations</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#locations">Locations & Hours</a></li>
         </ul>
     </nav>
 
@@ -166,50 +164,17 @@
 
     <section id="about" class="section">
         <h2>About</h2>
-
         <div class="container">
             <p>Nudo House is a fast-casual, pan-Asian eatery focused on great food and warm hospitality. Aromatic pho from decades-long family recipes and ramen uniquely created through the mentorship by one of Japan's foremost ramen chefs are the main attractions. The restaurant also features a variety of dishes with Vietnamese, Japanese, Chinese, and Filipino influences. The menu spans noodles and soups to sandwiches and salads, as well as popular favorites such as spring rolls and crab rangoon. Globally-inspired flavors of soft serve rotate weekly for those with a sweet tooth. Ultimately, Nudo is the celebration of how powerful food can be and fueled by that gratitude and inspiration for its ability to bring people together and make everyone feel at home anywhere, anytime.</p>
         </div>
-    </section>
-
-    <section id="locations" class="section">
-        <h2>Locations</h2>
-
-        <div class="col-container">
-            <div class="first-col">
-                <h3>Delmar Loop</h3>
-                <p>
-                    <span class="subheader">Address:</span> <br>
-                    6105-A Delmar Blvd Saint Louis, MO 63112 <br>
-                </p>
-                <p>
-                    <span class="subheader">Hours:</span> <br> 
-                    Tuesday to Saturday: 11am to 9pm <br>
-                    Sunday: 12pm to 9pm <br>
-                    Closed Mondays <br>
-                </p>
-                <p>
-                    <span class="subheader">Contact:</span> <br>
-                    (314) 370-6970
-                </p>
-            </div>
-
-            <div class="second-col">
-                <h3>Creve Coeur</h3>
-                <p>
-                    <span class="subheader">Address:</span> <br>
-                    11423 Olive Blvd Saint Louis, MO 63141 <br>
-                </p>
-                <p>
-                    <span class="subheader">Hours:</span> <br> 
-                    Monday to Saturday: 11am to 9pm <br>
-                    Closed Sundays
-                </p>
-                <p>
-                    <span class="subheader">Contact:</span> <br>
-                    (314) 274-8046
-                </p>
-            </div>
+        <div class="container">   
+            <img src="https://www.goodfoodstl.com/wp-content/uploads/2017/09/Nudo-House-Qui-Tran-Marie-Anne.jpg">
+            <h3>Qui Tran - Owner</h3>
+            <p>Qui Tran and his parents are the “American Dream” of the Vietnam diaspora. Refugees of war, they landed in St. Louis, MO in 1980 when he was just 3 years old. Qui's mother, Lee, opened the first Vietnamese restaurant in the area, Mai Lee. Qui grew up in the family business and has worked his way around the kitchen and front-of-the-house ever since. Tran is a relentless champion for St. Louis and its dining community. He supports many charitable causes and participates in promotional events that helps to bring visibility to the region. Qui is humbled to be an ambassador for his beloved city, its restaurant scene, and its immigrant communities. “The people of St. Louis essentially made Mai Lee the success it is today. What started out as a way to help my parents pay the bills and keep a roof over my head has now provided me with a platform to advocate for my city and the amazing people in it. Food is at the heart of my story. It is my belief that American food is immigrant food and I want to explore and share those stories to whomever is willing to listen.”</p>
+        </div>
+        <div class="container">   
+            <h3>Marie-Anne Velasco - Chef & Co-Owner</h3>
+            <p>Chef Marie-Anne Velasco’s culinary career was born from a love of language. Fluent in five languages,  Velasco has used her education, travel, and mentorships to create an expansive culinary career. A Filipino French-Canadian, Marie-Anne was raised in Montreal where she attended St. Pius X culinary program after studying language and finance at Concordia University. She then embarked on a global adventure to pursue the cultures and cuisines. “I believe the best way to learn food is to immerse yourself in the culture. It inevitably leads to eating and cooking,” says Velasco. Chef Marie-Anne Velasco, 'Chef MAV' as she is known, is an international food specialist with a focus in Pan-Asian food featuring traditional French techniques. She is known for applying Asian flair and ingredients to familiar dishes as well as elevating classic dishes with interesting twists. Her journey with Nudo House has been accentuated by a love and dedication to the community of St. Louis and the strong relationships and camaraderie within the food and beverage industry.</p>
         </div>
     </section>
 
@@ -374,26 +339,21 @@
         </div>
     </section>
 
-    <section id="faqs" class="section">
-        <h2>FAQs</h2>
-        <div class="container">
-            <details>
-                <summary>Do you take reservations?</summary>
-                <p> Our restaurant is seated on a first-come, first-serve basis. Reservations are only accepted for parties of eight or more. Please call us to arrange a large party.</p>
-            </details>
-            <details>
-                <summary>Do you offer delivery?</summary>
-                <p>Nudo House is available for delivery through the Uber Eats app.</p>
-            </details>
-            <details>
-                <summary>Do you accommodate dietary restrictions?</summary>
-                <p>Nudo House has options for many dietary needs. some of our dishes are already gluten free, vegetarian, vegan, etc, and our staff is fully trained to help you navigate the menu and select proper dishes to suit your needs and tastes.</p>
-            </details>
-            <details>
-                <summary>Do you offer a full bar?</summary>
-                <p>Nudo House serves a selection of wine, beer, canned cocktails, and sake, but we do not have a full bar.</p>
-            </details>
+    <section id="locations" class="section">
+        <h2>Locations & Hours</h2>
+
+        <div class="col-container">
+            <div class="first-col">
+                <h3>Business Hours</h3>
+                <p><b>Creve Coeur </b><br>Monday - Saturday: 11am - 9pm<br>Closed Sunday <br></p>
+                <p><b>Delmar Loop </b><br>Tuesday - Saturday: 11am - 9pm<br>Sunday: 12pm - 9pm <br>Closed Monday<br></p>
+            </div>
+            <div class="second-col">
+                <h3>Visit Us</h3>
+                <p><b>Creve Coeur</b><br>11423 Olive Blvd Saint Louis, MO 63141</p><br>
+                <p><b>Delmar Loop</b><br>6105-A Delmar Blvd Saint Louis, MO 63112</p>
+            </div>
         </div>
-    </section> 
+    </section>
 </body>
 </html>
