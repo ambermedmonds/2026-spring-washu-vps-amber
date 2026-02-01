@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nudo House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            margin: auto;
+            font-family: "Poppins", 
+            sans-serif;
+            background-color: #F6F1E7;
+        }
+
+        .section {
+            padding: 30px 0 40px 0;
+        }
+
+        .container {
+            margin: auto;
+            width: 66.66%;
+        }
+
+        h1 {
+            position: relative;
+            text-align: center;
+            font-size: 5em;
+            color: white;
+        }
+
+        h2 {
+            margin: 0 auto;
+            width: 66.66%;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            margin: 10px 0px;
+            font-size: 1.5em
+        }
+
+        p:last-child {
+            margin: 0;
+        }
+
+        .subheader {
+            font-weight: 600;
+        }
+
+        /* NAVIGATION BAR */
+
+        #nav-bar {
+            margin: 0;
+            width: 100%;
+            min-height: 80px;
+            position: sticky;
+            top: 0px;
+            background-color: #C51130;
+            z-index: 100;
+        }
+
+        #nav-bar img {
+            position: relative;
+            float: left;
+            left: 10px;
+            height: 80px;
+        }
+
+        #nav-bar ul {
+            margin: 0;
+            display: flex;
+            padding: 30px 50px;
+            justify-content: right;
+            list-style: none;
+            gap: 40px;
+        }
+
+        #nav-bar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* HERO SECTION */
+        #hero {
+            min-height: 90vh;
+
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("https://images.squarespace-cdn.com/content/v1/5b9eb9e35cfd7967a7b5b659/1537295915738-9WXU5RMEOEKHFE6LXAVN/image-asset.jpeg");
+            background-position: right;
+            background-repeat: no-repeat;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ABOUT SECTION */
+
+        #about {
+            background-color: white;
+        }
+
+        /* MENU SECTION */
+
+        .col-container {
+            margin: auto;
+            width: 66.66%;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .col-container div {
+            width: 50%;
+        }
+
+        #menu h3 {
+            margin: 10px auto 15px auto;
+            width: 65%;
+            padding: 5px 10px;
+            border: #C51130 solid 2px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .item {
+            font-weight: 600;
+        }
+
+        .item-description {
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .dietary {
+            color: #C51130; 
+        }
+
+        .price {
+            float: right;
+            font-weight: 600;
+        }
+
+        /* LOCATION SECTION */
+
+        #locations {
+            background-color: white;
+        }
+
+        #locations p {
+            margin: 0;
+        }
+
+        #locations ul {
+            margin: 5px;
+        }
+
+        #locations img {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        /* FAQ SECTION */
+
+        details summary {
+            font-weight: 600;
+        }
+
+        details p:last-child {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="nav-bar">
+        <img src="assets/nudo-logo.png">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <h1>Nudo House</h1>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About</h2>
+
+        <div class="container">
+            <p>Nudo House is a fast-casual, pan-Asian eatery focused on great food and warm hospitality. Aromatic pho from decades-long family recipes and ramen uniquely created through the mentorship by one of Japan's foremost ramen chefs are the main attractions. The restaurant also features a variety of dishes with Vietnamese, Japanese, Chinese, and Filipino influences. The menu spans noodles and soups to sandwiches and salads, as well as popular favorites such as spring rolls and crab rangoon. Globally-inspired flavors of soft serve rotate weekly for those with a sweet tooth. Ultimately, Nudo is the celebration of how powerful food can be and fueled by that gratitude and inspiration for its ability to bring people together and make everyone feel at home anywhere, anytime.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Menu</h2>
+
+        <h3>not ramen</h3>
+
+        <div class="col-container">
+            <div class="first-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">papaya salad <span class="dietary">(v)</b></span></span></td>
+                            <td class="price">$8.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">green papaya, shrimp, pork, carrot, celery, cucumber, peanut, cilantro, fried shallot, nuoc nam</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">sesame nudo <span class="dietary">(v)</b></span></span></td>
+                            <td class="price">$5.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">cold noodles, pickled carrot, cucumber, cilantro, ginger soy, seasame peanut sauce</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">vietnamese chicken salad <span class="dietary">(gf)</b></span></span></td>
+                            <td class="price">$8.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">shredded chicken, napa cabbage, carrot, cucumber, peanut, cilantro, nuoc nam</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">hiyachi chuka <span class="dietary">(v)</b></span></span></td>
+                            <td class="price">$8.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">cole kale noodles, pickled carrot, pickled mushroom, cucumber, menma, pickled ginger, sesame peanut sauce, ginger soy</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">charred edamame</span></td>
+                            <td class="price">$5.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">wok charred edamame, furikake</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">spring roll (1) <span class="dietary">(v, gf)</b></span></span></td>
+                            <td class="price">$2.50</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">rice paper, lettuce, cilantro, rice noodle, hoisin, peanut sauce</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">kimchi <span class="dietary">(v, gf)</b></span></span></td>
+                            <td class="price">$5.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">napa cabbage, daikon radish fermented with ginger and chili</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">tamarind fried chicken</span></td>
+                            <td class="price">$8.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">tempura fried chicken, tamarind sauce, napa slaw, fried shallot, green onion</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="second-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">tamarind tofu</span></td>
+                            <td class="price">$7.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">abura aged tofu, assorted vegetables, tamarind sauce, fried shallot, green onion</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">veggie egg rolls (5)</span></td>
+                            <td class="price">$6.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">fried crispy, served with nuoc nam</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">crispy chicken gyoza (5)</span></td>
+                            <td class="price">$6.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">fried crispy, served with ginger soy sauce</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">crab rangoon (3)</span></td>
+                            <td class="price">$4.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">handmade every morning</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">takoyaki</span></td>
+                            <td class="price">$4.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">fried octopus balls, kewpie mayo, pickled ginger, bonito flakes</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">crunchy umami</span></td>
+                            <td class="price">$6.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">crunchy brussels sprouts, chasu burnt ends, kelp salt</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">beef and broccoli</span></td>
+                            <td class="price">$14.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">beef flank, noodles, broccoli, fried shallots, fried garlic, green onions, ginger</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">YOLO mein</span></td>
+                            <td class="price">$14.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">pork, chicken, assorted vegetables, noodles, lo mein sauce, fried shallots, green onion</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3>sandwiches</h3>
+
+        <div class="col-container">
+            <div class="first-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">nudo banh mi</span></td>
+                            <td class="price">$7</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">braised pork shoulder</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">chicken banh mi</span></td>
+                            <td class="price">$7</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">butter braised chicken</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="second-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">banh mi pho dip</span></td>
+                            <td class="price">$8</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">pho-braised beef, hoisin, pho broth for dipping</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td><span class="item">belly banh-mer</span></td>
+                            <td class="price">$8</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">tempura fried chicken, tamarind sauce</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3>3-1-pho</h3>
+
+        <div class="col-container">
+            <div class="first-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">pho beef <span class="dietary">(gf)</b></span></span></td>
+                            <td class="price">$16</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">rare flank steak</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">pho chicken <span class="dietary">(gf)</b></span></span></td>
+                            <td class="price">$16</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">shredded chicken</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">pho shrimp <span class="dietary">(gf)</b></span></span></td>
+                            <td class="price">$18</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">shrimp</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="second-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">pho shizzle <span class="dietary">(gf)</b></span></span></td>
+                            <td class="price">$20</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">rare flank steak, shredded chicken, and shrimp</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">pho beef delxue <span class="dietary">(gf)</b></span></span></td>
+                            <td class="price">$20</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">rare flank steak, beef meatballs, and tripe</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3>ramen</h3>
+
+        <div class="col-container">
+            <div class="first-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">classic nudo</span></td>
+                            <td class="price">$16</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">braised pork shoulder</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td><span class="item">hebrew hammer</span></td>
+                            <td class="price">$16</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">butter braised chicken</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td><span class="item">o'miso spicy</span></td>
+                            <td class="price">$16</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">pho-braised beef, hoisin, pho broth for dipping</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">shroomed out <span class="dietary">(v)</b></span></span></td>
+                            <td class="price">$14</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">tempura fried chicken, tamarind sauce</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="second-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">nduja bomb</span></td>
+                            <td class="price">$18</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">classic nudo ramen kicked up with salume beddu nduja</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">curry up <span class="dietary">(v, gf)</b></span></span></td>
+                            <td class="price">$17</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">yellow coconut curry, carrot, celery, onion, cilantro, fried shallot, peanuts</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">tantanmen</span></td>
+                            <td class="price">$18</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">really spicy! sesame, chili, fermented tofu, ground pork, naruto fish cake, bean sprouts, fried shallot</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3>kids</h3>
+
+        <div class="col-container">
+            <div class="first-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">kids ramen</span></td>
+                            <td class="price">$6</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">ramen noodles, choice of broth <br> with pork or chicken, add $1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="second-col">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td><span class="item">kids pho</span></td>
+                            <td class="price">$5</td>
+                        </tr>
+                        <tr>
+                            <td class="item-description">rice noodles, beef pho broth <br> with beef or chicken, add $2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="section">
+        <h2>Locations</h2>
+
+        <div class="col-container">
+            <div class="first-col">
+                <h3>Delmar Loop</h3>
+                <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/cc2dfebd-1e2d-4352-80d8-3433e61794ba/NudoLoop_230524_final_v1-5069.jpg">
+                <p>
+                    <b>Address:</b> <a href="https://www.google.com/maps/place/Nudo+House+Creve+Coeur/@38.6723881,-90.4385501,17z/data=!3m2!4b1!5s0x87df32be23edf75b:0x2404839a1b155593!4m6!3m5!1s0x87df32bfcdf44337:0xae0c0959b052b007!8m2!3d38.6723882!4d-90.4336792!16s%2Fg%2F11d_vq1nnb?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D">6105-A Delmar Blvd Saint Louis, MO 63112</a><br>
+                    <b>Hours:</b>
+                    <ul>
+                        <li>Tuesday to Saturday: 11am - 9pm</li>
+                        <li>Sunday: 12pm - 9pm</li>
+                        <li>Closed Monday</li>
+                    </ul>
+                    <b>Contact:</b> (314) 370-6970
+                </p>    
+            </div>
+
+            <div class="second-col">
+                <h3>Creve Coeur</h3>
+                <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/afffc90e-cbd9-49e8-a3d7-fcf0cb0bd03f/NudoCC_230524_final_v1-5240+%281%29.jpg">
+                <p>
+                    <b>Address:</b> <a href="https://www.google.com/maps/place/Nudo+House+Creve+Coeur/@38.6723881,-90.4385501,17z/data=!3m2!4b1!5s0x87df32be23edf75b:0x2404839a1b155593!4m6!3m5!1s0x87df32bfcdf44337:0xae0c0959b052b007!8m2!3d38.6723882!4d-90.4336792!16s%2Fg%2F11d_vq1nnb?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D">11423 Olive Blvd Saint Louis, MO 63141</a><br>
+                    <b>Hours:</b>
+                    <ul>
+                        <li>Monday to Saturday: 11am - 9pm</li>
+                        <li>Closed Sunday</li>
+                    </ul>
+                    <b>Contact:</b> (314) 274-8046
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs" class="section">
+        <h2>FAQs</h2>
+        <div class="container">
+            <details>
+                <summary>Do you take reservations?</summary>
+                <p> Our restaurant is seated on a first-come, first-serve basis. Reservations are only accepted for parties of eight or more. Please call us to arrange a large party.</p>
+            </details>
+            <details>
+                <summary>Do you offer delivery?</summary>
+                <p>Nudo House is available for delivery through the Uber Eats app.</p>
+            </details>
+            <details>
+                <summary>Do you accommodate dietary restrictions?</summary>
+                <p>Nudo House has options for many dietary needs. some of our dishes are already gluten free, vegetarian, vegan, etc, and our staff is fully trained to help you navigate the menu and select proper dishes to suit your needs and tastes.</p>
+            </details>
+            <details>
+                <summary>Do you offer a full bar?</summary>
+                <p>Nudo House serves a selection of wine, beer, canned cocktails, and sake, but we do not have a full bar.</p>
+            </details>
+        </div>
+    </section> 
+</body>
+</html>
