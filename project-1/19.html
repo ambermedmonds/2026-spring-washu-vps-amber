@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nudo House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+
+        html {
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            margin: auto;
+            font-family: "Poppins", 
+            sans-serif;
+            background-color: white;
+        }
+
+        .section {
+            padding: 30px 0 40px 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 66.66%;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .container div {
+            width: 50%;
+        }
+
+        h1 {
+            position: relative;
+            text-align: center;
+            font-size: 5em;
+            color: white;
+        }
+
+        h2 {
+            margin: 0 auto;
+            width: 66.66%;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            margin: 5px 0 5px 0;
+        }
+
+        /* NAVIGATION BAR */
+
+        #nav-bar {
+            margin: 0;
+            width: 100%;
+            min-height: 80px;
+            position: sticky;
+            top: 0px;
+            background-color: #C51130;
+            z-index: 100;
+        }
+
+        #nav-bar img {
+            position: relative;
+            float: left;
+            left: 10px;
+            height: 80px;
+        }
+
+        #nav-bar ul {
+            margin: 0;
+            display: flex;
+            padding: 30px 50px;
+            justify-content: right;
+            list-style: none;
+            gap: 40px;
+        }
+
+        #nav-bar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #nav-bar a:hover {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        /* HERO SECTION */
+
+        #hero {
+            min-height: 90vh;
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("https://images.squarespace-cdn.com/content/v1/5b9eb9e35cfd7967a7b5b659/1537295915738-9WXU5RMEOEKHFE6LXAVN/image-asset.jpeg");
+            background-position: right;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ABOUT SECTION */
+
+        #about p {
+            margin: 0px;
+        }
+
+        /* MENU SECTION */
+
+        #menu {
+            background-color: #F6F1E7;
+        }
+
+        #menu h3 {
+            padding: 5px 10px;
+            background-color: #C51130;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #menu .item {
+            font-weight: 600;
+        }
+
+        #menu .item-description {
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        #menu .dietary {
+            color: #C51130; 
+        }
+        
+        #menu .note {
+            font-weight: 300;
+        }
+
+        #menu p:last-child {
+            margin: 0px;
+        }
+
+        /* LOCATIONS SECTION */
+
+        #locations h3 {
+            font-size: 1.5em;
+        }
+
+        #locations p {
+            margin: 0;
+        }
+
+        #locations ul {
+            margin: 5px;
+        }
+
+        #locations img {
+            margin-bottom: 10px;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        #locations a {
+            color: #C51130;
+        }
+
+        /* FAQ SECTION */
+
+        #faqs {
+            background-color: #F6F1E7;
+        }
+
+        #faqs div {
+            margin: 0 auto;
+            width: 66.66%;
+        }
+
+        #faqs details summary {
+            font-weight: 600;
+        }
+
+        #faqs details summary:hover {
+            color: #C51130;
+            cursor: pointer;
+        }
+
+        #faqs details p:last-child {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        #faqs a {
+            color: #C51130;
+        }
+
+        /* PRESS SECTION */
+
+        #press img {
+            margin: 5px 0 10px 0;
+            width: 100%;
+            height: 310px;
+            display: block;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        #press img:hover {
+            scale: 101%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #press p {
+            margin: 0px 0 20px 0;
+        }
+
+        #press a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #press a:hover {
+            color: #C51130;
+            cursor: pointer;
+        }
+
+        #press .magazine {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav id="nav-bar">
+        <a href="#hero"><img src="assets/nudo-logo.png"></a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#press">Press</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section id="hero">
+        <h1>Nudo House</h1>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="section">
+        <h2>About</h2>
+
+        <div class="container">
+            <p>Nudo House is a fast-casual, pan-Asian eatery focused on great food and warm hospitality. Aromatic pho from decades-long family recipes and ramen uniquely created through the mentorship by one of Japan's foremost ramen chefs are the main attractions. The restaurant also features a variety of dishes with Vietnamese, Japanese, Chinese, and Filipino influences. The menu spans noodles and soups to sandwiches and salads, as well as popular favorites such as spring rolls and crab rangoon. Globally-inspired flavors of soft serve rotate weekly for those with a sweet tooth. Ultimately, Nudo is the celebration of how powerful food can be and fueled by that gratitude and inspiration for its ability to bring people together and make everyone feel at home anywhere, anytime.</p>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+
+    <section id="menu" class="section">
+        <h2>Menu</h2>
+
+        <div class="container">
+            <div class="first-col">
+                <h3>appetizers</h3>
+                <p>
+                    <span class="item">papaya salad <span class="dietary">(v)</span> - $8.00</span><br>
+                    <span class="item-description">green papaya, shrimp, pork, carrot, celery, cucumber, peanut, cilantro, fried shallot, nuoc nam</span>
+                </p>
+                <p>
+                    <span class="item">seasame nudo <span class="dietary">(v)</span> - $5.00</span><br>
+                    <span class="item-description">cold noodles, pickled carrot, cucumber, cilantro, ginger soy, seasame peanut sauce</span>
+                </p>
+                <p>
+                    <span class="item">vitenamese chicken salad <span class="dietary">(gf)</span> - $8.00</span><br>
+                    <span class="item-description">shredded chicken, napa cabbage, carrot, cucumber, peanut, cilantro, nuoc nam</span>
+                </p>
+                <p>
+                    <span class="item">hiyachi chuka - $8.00</span><br>
+                    <span class="item-description">cole kale noodles, pickled carrot, pickled mushroom, cucumber, menma, pickled ginger, sesame peanut sauce, ginger soy</span>
+                </p>
+                <p>
+                    <span class="item">charred edamame - $5.00</span><br>
+                    <span class="item-description">wok charred edamame, furikake</span>
+                </p>
+                <p>
+                    <span class="item">spring roll (1) <span class="dietary">(v, gf)</span> - $2.50</span><br>
+                    <span class="item-description">rice paper, lettuce, cilantro, rice noodle, hoisin, peanut sauce (not fried)</span>
+                </p>
+                <p>
+                    <span class="item">kimchi <span class="dietary">(v, gf)</span> - $5.00</span><br>
+                    <span class="item-description">napa cabbage, daikon radish feremented with ginger and chili</span>
+                </p>
+                <p>
+                    <span class="item">tamarind fried chicken - $8.00</span><br>
+                    <span class="item-description">tempura fried chicken, tamarind sauce, napa slaw, fried shallot, green onion</span>
+                </p>
+                <p>
+                    <span class="item">tamarind tofu - $7.00</span><br>
+                    <span class="item-description">abura aged tofu, assorted vegetables, tamarind sauce, fried shallot, green onion</span>
+                </p>
+                <p>
+                    <span class="item">veggie egg rolls (5) - $6.00</span><br>
+                    <span class="item-description">fried crispy, served with nuoc nam</span>
+                </p>
+                <p>
+                    <span class="item">crispy chicken gyoza (5) - $6.00</span><br>
+                    <span class="item-description">fried crispy, served with ginger soy sauce</span>
+                </p>
+                <p>
+                    <span class="item">tayoyaki - $8.00</span><br>
+                    <span class="item-description">fried octopus balls, kewpie mayo, pickled ginger, bonito flakes</span>
+                </p>
+                <p>
+                    <span class="item">crunchy umami - $6.00</span><br>
+                    <span class="item-description">crunchy brussels sprouts, chasu burnt ends, kelp salt</span>
+                </p>
+                <p>
+                    <span class="item">beef and broccoli - $14.00</span><br>
+                    <span class="item-description">beef flank, noodles, broccoli, fried shallots, fried garlic, green onions, ginger</span>
+                </p>
+                <p>
+                    <span class="item">YOLO mein - $14.00</span><br>
+                    <span class="item-description">pork, chicken, assorted vegetables, noodles, lo mein sauce, fried shallots, green onion</span>
+                </p>
+
+                <h3>kids</h3>
+                <p>
+                    <span class="item">kids ramen - $6.00</span><br>
+                    <span class="item-description">ramen noodles, choice of broth *with pork or chicken, add $1</span>
+                </p>
+                <p>
+                    <span class="item">kids pho - $5.00</span><br>
+                    <span class="item-description">rice noodles, beef pho broth *with beef or chicken, add $2</span>
+                </p>
+            </div>
+
+            <div class="second-col">
+                <h3>sandwiches</h3>
+                <p class="note">
+                    all banh mi come with chicken pate, garlic aioli, cucumber, jalapeno, pickled carrot, cilantro
+                </p>
+                <p>
+                    <span class="item">nudo banh mi - $7.00</span><br>
+                    <span class="item-description">braised pork shoulder</span>
+                </p>
+                <p>
+                    <span class="item">chicken banh mi - $7.00</span><br>
+                    <span class="item-description">butter braised chicken</span>
+                </p>
+                <p>
+                    <span class="item">banh mi pho di - $8.00</span><br>
+                    <span class="item-description">pho-braised beef, hoisin, pho broth for dipping</span>
+                </p>
+                <p>
+                    <span class="item">belly banh-mer - $8.00</span><br>
+                    <span class="item-description">tempura fried chicken, tamarind sauce</span>
+                </p>
+
+                <h3>3-1-pho</h3>
+                <p class="note">
+                    all pho comes with beef broth served with onion and a side of cilantro, thai basil, bean sprouts, jalapeno, and citrus
+                </p>
+                <p>
+                    <span class="item">pho beef <span class="dietary">(gf)</span> - $16.00</span><br>
+                    <span class="item-description">rare flank steak</span>
+                </p>
+                <p>
+                    <span class="item">pho chicken <span class="dietary">(gf)</span> - $16.00</span><br>
+                    <span class="item-description">shredded chicken</span>
+                </p>
+                <p>
+                    <span class="item">pho shrimp <span class="dietary">(gf)</span> - $18.00</span><br>
+                    <span class="item-description">shrimp</span>
+                </p>
+                <p>
+                    <span class="item">pho shizzle <span class="dietary">(gf)</span> - $20.00</span><br>
+                    <span class="item-description">rare flank steak, shredded chicken, and shrimp</span>
+                </p>
+                <p>
+                    <span class="item">pho beef deluxe <span class="dietary">(gf)</span> - $20.00</span><br>
+                    <span class="item-description">rare flank steak, beef meatballs, and tripe</span>
+                </p>
+
+                <h3>ramen</h3>
+                <p class="note">
+                    all ramen comes with green onion, sesame seeds, and ajitsuke tamago (ramen egg)
+                </p>
+                <p>
+                    <span class="item">classic nudo - $16.00</span><br>
+                    <span class="item-description">tonkotsu broth, shoyu, chasu pork, menma, black garlic</span>
+                </p>
+                <p>
+                    <span class="item">hebrew hammer - $16.00</span><br>
+                    <span class="item-description">chicken paitan, shoyu, braised chicken thigh, menma, bok choy, black garlic</span>
+                </p>
+                <p>
+                    <span class="item">o'miso spicy - $16.00</span><br>
+                    <span class="item-description">tonkotsu broth, miso, nudo chili paste, chasu pork, bean sprouts, pickled mustard greens</span>
+                </p>
+                <p>
+                    <span class="item">shroomed out <span class="dietary">(v)</span> - $14.00</span><br>
+                    <span class="item-description">mushroom broth, king oyster mushrooms, bok choy, menma, black garlic</span>
+                </p>
+                <p>
+                    <span class="item">nduja bomb - $18.00</span><br>
+                    <span class="item-description">classic nudo ramen kicked up with salume beddu nduja</span>
+                </p>
+                <p>
+                    <span class="item">curry up <span class="dietary">(v, gf)</span> - $17.00</span><br>
+                    <span class="item-description">yellow coconut curry, carrot, celery, onion, cilantro, fried shallot, peanuts</span>
+                </p>
+                <p>
+                    <span class="item">tantanmen - $18.00</span><br>
+                    <span class="item-description">really spicy! sesame, chili, fermented tofu, ground pork, naruto fish cake, bean sprouts, fried shallot</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATIONS SECTION -->
+
+    <section id="locations" class="section">
+        <h2>Locations</h2>
+
+        <div class="container">
+            <div class="first-col">
+                <h3>Delmar Loop</h3>
+                <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/cc2dfebd-1e2d-4352-80d8-3433e61794ba/NudoLoop_230524_final_v1-5069.jpg">
+                <p>
+                    <b>Address: </b><a href="https://www.google.com/maps/place/Nudo+House+Creve+Coeur/@38.6723881,-90.4385501,17z/data=!3m2!4b1!5s0x87df32be23edf75b:0x2404839a1b155593!4m6!3m5!1s0x87df32bfcdf44337:0xae0c0959b052b007!8m2!3d38.6723882!4d-90.4336792!16s%2Fg%2F11d_vq1nnb?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" target="_blank">6105-A Delmar Blvd Saint Louis, MO 63112</a><br>
+                    <b>Hours:</b>
+                    <ul>
+                        <li>Tuesday to Saturday: 11am - 9pm</li>
+                        <li>Sunday: 12pm - 9pm</li>
+                        <li>Closed Monday</li>
+                    </ul>
+                    <b>Contact:</b> (314) 370-6970
+                </p>    
+            </div>
+
+            <div class="second-col">
+                <h3>Creve Coeur</h3>
+                <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/afffc90e-cbd9-49e8-a3d7-fcf0cb0bd03f/NudoCC_230524_final_v1-5240+%281%29.jpg">
+                <p>
+                    <b>Address: </b><a href="https://www.google.com/maps/place/Nudo+House+Creve+Coeur/@38.6723881,-90.4385501,17z/data=!3m2!4b1!5s0x87df32be23edf75b:0x2404839a1b155593!4m6!3m5!1s0x87df32bfcdf44337:0xae0c0959b052b007!8m2!3d38.6723882!4d-90.4336792!16s%2Fg%2F11d_vq1nnb?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" target="_blank">11423 Olive Blvd Saint Louis, MO 63141</a><br>
+                    <b>Hours:</b>
+                    <ul>
+                        <li>Monday to Saturday: 11am - 9pm</li>
+                        <li>Closed Sunday</li>
+                    </ul>
+                    <b>Contact:</b> (314) 274-8046
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs SECTION -->
+
+    <section id="faqs" class="section">
+        <h2>FAQs</h2>
+        <div>
+            <details open>
+                <summary>Do you take reservations?</summary>
+                <p> Our restaurant is seated on a first-come, first-serve basis. Reservations are only accepted for parties of eight or more. Please call us to arrange a large party.</p>
+            </details>
+            <details open>
+                <summary>Do you offer delivery?</summary>
+                <p>Nudo House is available for delivery through the Uber Eats app from both 
+                    <a href="https://www.ubereats.com/store/nudo-house-creve-coeur/VgxeDA4hSeGrjegFAgDzDg?diningMode=DELIVERY" target="_blank">Creve Coeur</a> and
+                    <a href="https://www.ubereats.com/store/nudo-house-delmar-loop/aoZyXhtKQKW9iRYh8qg8rA?diningMode=DELIVERY" target="_blank">Delmar Loop</a>.</p>
+            </details>
+            <details open>
+                <summary>Do you accommodate dietary restrictions?</summary>
+                <p>Nudo House has options for many dietary needs. some of our dishes are already gluten free, vegetarian, vegan, etc, and our staff is fully trained to help you navigate the menu and select proper dishes to suit your needs and tastes.</p>
+            </details>
+            <details open>
+                <summary>Do you offer a full bar?</summary>
+                <p>Nudo House serves a selection of wine, beer, canned cocktails, and sake, but we do not have a full bar.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Press SECTION -->
+
+    <section id="press" class="section">
+        <h2>Press</h2>
+        <div class="container">
+            <div class="first-col">
+                <a href="https://www.foodandwine.com/recipes/mrs-trans-master-pho-broth-flank-steak" target="_blank">
+                    <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/1563d064-e75a-4b84-9bf2-4c64a0eb92f8/IMG_0136.jpeg?format=1500w">
+                </a>
+                <p>
+                    <a href="https://www.foodandwine.com/recipes/mrs-trans-master-pho-broth-flank-steak" target="_blank"><span class="magazine">Food & Wine Magazine</span><br>February 2018 Cover</a>
+                </p>
+
+                <a href="https://www.laduenews.com/arts-and-culture/dining/nudo-house-brings-asian-flavor-to-st-louis-west-end-neighborhood/article_f3066ab3-a4dd-5ab6-9128-6eca8101fb25.html" target="_blank">
+                    <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/37d99274-5ec3-4b10-8b86-45f26df1fb2a/ladue+news+takoyaki.jpeg?format=2500w">
+                </a>
+                <p>
+                    <a href="https://www.laduenews.com/arts-and-culture/dining/nudo-house-brings-asian-flavor-to-st-louis-west-end-neighborhood/article_f3066ab3-a4dd-5ab6-9128-6eca8101fb25.html" target="_blank"><span class="magazine">Ladue News</span><br>"Nudo House Brings Asian Flavor to St. Louis' West End Neighborhood"</a></p>
+                </p>
+
+                <a href="https://www.saucemagazine.com/places-2/review-nudo-house-creve-coeur-17334200/" target="_blank">
+                    <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/adf96d60-c2cb-45eb-9bc1-6f9e875b9fc1/sauce+review.jpg?format=2500w"> 
+                </a>
+                <p>
+                    <a href="https://www.saucemagazine.com/places-2/review-nudo-house-creve-coeur-17334200/" target="_blank"><span class="magazine">Sauce Magazine</span><br>"Review: Nudo House Creve Coeur"</a>
+                </p>
+            </div>
+
+            <div class="second-col">
+                <a href="https://www.stlmag.com/dining/restaurant-reviews/nudo-house-stl-succeeds-on-all-levels/" target="_blank">
+                    <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/93ef3511-29ce-4f53-885b-698304a2b2e5/stl+mag.jpg?format=2500w">
+                </a>
+                <p>
+                    <a href="https://www.stlmag.com/dining/restaurant-reviews/nudo-house-stl-succeeds-on-all-levels/" target="_blank"><span class="magazine">St. Louis Magazine</span><br>"Nudo House STL succeeds on all levels"</a>
+                </p>
+
+                <a href="https://www.feastmagazine.com/restaurants/the-long-awaited-nudo-house-brings-ramen-pho-and-more-to-creve-coeur/article_3ed70368-b8cd-11e7-9d64-8b4d91b61fa0.html" target="_blank">
+                    <img src="https://images.squarespace-cdn.com/content/v1/621ba04eabb90e663cafc123/7bff0cbe-ea86-4331-a6eb-6c421b324999/feast.jpg?format=2500w">
+                </a>
+                <p>
+                    <a href="https://www.feastmagazine.com/restaurants/the-long-awaited-nudo-house-brings-ramen-pho-and-more-to-creve-coeur/article_3ed70368-b8cd-11e7-9d64-8b4d91b61fa0.html" target="_blank"><span class="magazine">Feast Magazine</span><br>"The Long-Awaited Nudo House Brings Ramen, Pho and More to Creve Coeur"</a>
+                </p>
+
+                <a href="https://www.saucemagazine.com/places-2/first-look-nudo-house-on-the-loop-17333386/" target="_blank">
+                    <img src="https://i0.wp.com/www.saucemagazine.com/wp-content/uploads/2019/09/nudo-ramen-the-loop-lg.webp?w=1900&ssl=1">
+                </a>
+                <p>
+                    <a href="https://www.saucemagazine.com/places-2/first-look-nudo-house-on-the-loop-17333386/" target="_blank"><span class="magazine">Sauce Magazine</span><br>"First Look: Nudo House on The Loop"</a>
+                </p>
+            </div>
+        </div>
+    </section> 
+
+</body>
+</html>
