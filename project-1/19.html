@@ -37,13 +37,6 @@
             width: 50%;
         }
 
-        h1 {
-            position: relative;
-            text-align: center;
-            font-size: 5em;
-            color: white;
-        }
-
         h2 {
             margin: 0 auto;
             width: 66.66%;
@@ -96,12 +89,28 @@
 
         #hero {
             min-height: 90vh;
-            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("https://images.squarespace-cdn.com/content/v1/5b9eb9e35cfd7967a7b5b659/1537295915738-9WXU5RMEOEKHFE6LXAVN/image-asset.jpeg");
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.squarespace-cdn.com/content/v1/5b9eb9e35cfd7967a7b5b659/1537295915738-9WXU5RMEOEKHFE6LXAVN/image-asset.jpeg");
             background-position: right;
             background-repeat: no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        h1 {
+            position: relative;
+            text-align: center;
+            font-size: 7em;
+            color: white;
+        }
+
+        @keyframes fadein {
+            from {opacity: 0; transform: translateY(20px);}
+            to   {opacity: 1; transform: translateY(0);}
+        }
+
+        #hero h1 {
+            animation: fadein 2s ease-in forwards;
         }
 
         /* ABOUT SECTION */
@@ -208,6 +217,7 @@
             display: block;
             border-radius: 10px;
             object-fit: cover;
+            transition: 0.5s;
         }
 
         #press img:hover {
