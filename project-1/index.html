@@ -4,38 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0 auto;
+            width: 100%;
+            font-family: "Poppins", sans-serif;
+            background-color: white;
+        }
+
+        h1 {
+            margin-bottom: 0;
+            line-height: 1;
+            text-align: center;
+            font-size: 4em; 
+        }
+
+        details > summary {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            list-style: none;
+        }
+
+        details > summary::after {
+            content: "+";
+            float: right;
+        }
+        
+        details[open] > summary::after {
+            content: "-";
+        }
+
+        .container {
+            margin: 30px 50px;
+            padding: 20px 30px;
+            border-radius: 15px;
+            background-color: #F6F1E7;
+            cursor: pointer;
+        }
+
+        .container:hover {
+            background-color: #C51130;
+            color: white;
+        }
+
+        .links a {
+            color: black;
+        }
+
+        .container:hover .links a {
+            color: white;
+        }
+
+        .final-button {
+            display: block;
+            width: calc(100% - 160px);
+            margin: 30px 50px;
+            padding: 20px 30px;
+            border-radius: 15px;
+            text-align: start;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 2.5em;
+            font-weight: bold;
+            background-color: #F6F1E7;
+            color: black;
+            cursor: pointer;
+        }
+
+        .final-button:hover {
+            background-color: #C51130;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Nudo House</h1>
-    <b>20 Variations</b><br>
-    <br>
-    <i>Markdown</i><br>
-    <a href="01.md">1 - Markdown</a><br>
-    <a href="02.md">2 - Markdown</a><br>
-    <a href="03.md">3 - Markdown</a><br>
-    <a href="04.md">4 - Markdown</a><br>
-    <a href="05.md">5 - Markdown</a><br>
-    <br>
-    <i>HTML</i><br>
-    <a href="06.html">6 - HTML</a><br>
-    <a href="07.html">7 - HTML</a><br>
-    <a href="08.html">8 - HTML</a><br>
-    <a href="09.html">9 - HTML</a><br>
-    <a href="10.html">10 - HTML</a><br>
-    <br>
-    <i>HTML + CSS</i><br>
-    <a href="11.html">11 - HTML</a><br>
-    <a href="12.html">12 - HTML</a><br>
-    <a href="13.html">13 - HTML</a><br>
-    <a href="14.html">14 - HTML</a><br>
-    <a href="15.html">15 - HTML</a><br>
-    <a href="16.html">16 - HTML</a><br>
-    <a href="17.html">17 - HTML</a><br>
-    <a href="18.html">18 - HTML</a><br>
-    <a href="19.html">19 - HTML</a><br>
-    <a href="20.html">20 - HTML</a><br>
-    <br>
-    <i>Final</i><br>
-    <a href="final-variation.html">Final Variation</a><br>
+
+    <details class="container">
+        <summary>Markdown</summary>
+        <div class="links">
+            <a href="01.md">1 - Markdown</a><br>
+            <a href="02.md">2 - Markdown</a><br>
+            <a href="03.md">3 - Markdown</a><br>
+            <a href="04.md">4 - Markdown</a><br>
+            <a href="05.md">5 - Markdown</a><br>
+        </div>
+    </details>
+
+    <details class="container">
+        <summary>HTML</summary>
+        <div class="links">
+            <a href="06.html">6 - HTML</a><br>
+            <a href="07.html">7 - HTML</a><br>
+            <a href="08.html">8 - HTML</a><br>
+            <a href="09.html">9 - HTML</a><br>
+            <a href="10.html">10 - HTML</a><br>
+        </div>
+    </details>
+
+    <details class="container">
+        <summary>HTML + CSS</summary>
+        <div class="links">
+            <a href="11.html">11 - HTML</a><br>
+            <a href="12.html">12 - HTML</a><br>
+            <a href="13.html">13 - HTML</a><br>
+            <a href="14.html">14 - HTML</a><br>
+            <a href="15.html">15 - HTML</a><br>
+            <a href="16.html">16 - HTML</a><br>
+            <a href="17.html">17 - HTML</a><br>
+            <a href="18.html">18 - HTML</a><br>
+            <a href="19.html">19 - HTML</a><br>
+            <a href="20.html">20 - HTML</a><br>
+            <a href="21.html">21 - HTML</a><br>
+        </div>
+    </details>
+
+    <a class="final-button" href="final.html">Final Variation</a>
 </body>
 </html>
