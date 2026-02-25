@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        /* HERO SECTION */
+
+        #hero {
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(40, 40, 40);
+            color: white;
+        }
+
+        h1 {
+            margin: 0 24px;
+            text-align: left;
+            font-size: 2.5em;
+        }
+
+        .subheader {
+            margin: 0 24px;
+            text-align: left;
+            font-size: 1.25em;
+        }
+
+        @media screen and (max-width: 750px) {
+            #hero {
+                align-items: flex-start;
+            }
+
+            h1 {
+                line-height: 1.25;
+                font-size: 2.3em;
+            }
+
+            .subheader {
+                font-size: 1em;
+            }
+        }
+
+        /* INTERVIEWEE SECTION */
+
+        section {
+            width: 70%;
+            padding: 40px 0;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 860px) {
+            section {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            section {
+                width: 90%;
+            }
+        }  
+
+        #profiles {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .profile-card {
+            width: 350px;
+            padding: 24px;
+            margin: 24px 0;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.12);
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            #profiles {
+                flex-direction: column;
+                gap: 0px;
+            }
+
+            .profile-card {
+                width: fit-content;
+            }
+        }
+
+        .profile-card:hover {
+            scale: 1.05;
+            transition: all 0.2s ease;
+        }
+
+        .profile-card img {
+            width: 80%;
+            height: auto;
+            display: block;
+            justify-self: center;
+            margin: 0 0 20px 0;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            #profiles h3 {
+                font-size: 0.9em;
+            }
+            
+            #profiles p {
+                font-size: 0.8em;
+            }
+            
+        }
+
+        @media screen and (max-width: 600px) {
+            #profiles h3 {
+                font-size: 1em;
+            }
+            
+            #profiles p {
+                font-size: 1em;
+            }
+            
+        }
+
+        #profiles .eliana {
+            border-bottom: #29bf12 solid 3px;
+        }
+
+        #profiles .eliana:hover {
+            background-color: rgba(41, 191, 18, 0.1);
+            cursor: pointer;
+        }
+
+        #profiles .jason {
+            border-bottom: #08bdbd solid 3px;
+        }
+
+        #profiles .jason:hover {
+            background-color: rgba(8, 189, 189, 0.1);
+            cursor: pointer;
+        }
+
+        #profiles .juiling {
+            border-bottom: #f21b3f solid 3px;
+        }
+
+        #profiles .juiling:hover {
+            background-color: rgba(242, 27, 63, 0.1);
+            cursor: pointer;
+        }
+
+        /* INTERVIEW SECTION */
+
+        #transcript-controls {
+            width: 70%;
+            margin: 0 auto;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 860px) {
+            #transcript-controls {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            #transcript-controls {
+                width: 90%;
+            }
+        }
+
+        #show-all {
+            padding: 8px 14px;
+            border: 1px solid rgb(40, 40, 40);
+            border-radius: 50px;
+            background: white;
+            cursor: pointer;
+        }
+
+        #show-all:hover {
+            background-color: rgba(40, 40, 40, 0.1);
+        }
+
+        article {
+            width: 70%;
+            padding: 20px 0;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 860px) {
+            article {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            article {
+                width: 90%;
+            }
+        }
+
+        .transcript h3 {
+            margin-bottom: 10px;
+        }
+
+        .transcript .response {
+            margin-bottom: 10px;
+        }
+
+        .transcript .response:last-child {
+            margin-bottom: 0;
+        }
+
+        .transcript .eliana {
+            border-left: #29bf12 solid 3px;
+            padding-left: 10px;
+        }
+
+        .transcript .eliana:hover {
+            background-color: rgba(41, 191, 18, 0.1);
+        }
+
+        .transcript .jason {
+            border-left: #08bdbd solid 3px;
+            padding-left: 10px;
+        }
+
+        .transcript .jason:hover {
+            background-color: rgba(8, 189, 189, 0.1);
+        }
+
+        .transcript .juiling {
+            border-left: #f21b3f solid 3px;
+            padding-left: 10px;
+        }
+
+        .transcript .juiling:hover {
+            background-color: rgba(242, 27, 63, 0.1);
+        }
+
+        /* KEY INSIGHTS SECTION */
+
+        #insights h2 {
+            padding-top: 20px;
+        }
+
+        .container {
+            padding: 10px 0px;
+            margin-top: 10px;
+            border-bottom:rgb(40, 40, 40) solid 2px;
+            cursor: pointer;
+        }
+
+        details:last-child {
+            margin-bottom: 40px;
+        }
+
+        details > summary {
+            margin-bottom: 5px;
+            list-style: none;
+            font-weight: bold;
+        }
+
+        details > summary::after {
+            content: "+";
+            float: right;
+            font-size: 1.5rem; 
+            line-height: 1;
+        }
+        
+        details[open] > summary::after {
+            content: "-";
+        }
+      
+        /* FOOTER */
+
+        footer {
+            padding: 50px;
+            text-align: center;
+            background-color: rgb(40, 40, 40);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header id="hero">
+        <h1>How Do We Interact With Screens?</h1>
+        <p class="subheader"><i>Conversations about user experience and design across everyday digital life</i></p>
+    </header>
+
+    <main>        
+        <section>
+            <h2>Interviewees</h2>
+            <div id="profiles">
+                <div class="profile-card eliana" data-person="eliana">
+                    <img src="assets/eliana.png">
+                    <h3>Eliana Hanna</h3>
+                    <p>Senior at WashU</p>
+                    <p>Finance & OSM Major</p>
+                </div>
+
+                <div class="profile-card jason" data-person="jason">
+                    <img src="assets/jason.png">
+                    <h3>Jason Edmonds</h3>
+                    <p>Early Career</p>
+                    <p>Interested in Startups</p>
+                </div>
+                
+                <div class="profile-card juiling" data-person="juiling">
+                    <img src="assets/juiling.png">
+                    <h3>Juiling Edmonds</h3>
+                    <p>Wife and Mother</p>
+                    <p>Loves to Shop Online</p>
+                </div>
+            </div>
+        </section>
+
+        <hr><br>
+
+        <div id="transcript-controls">
+            <h2>Interview</h2>
+            <button id="show-all" type="button">Show all</button>
+        </div>
+        <article class="transcript">
+            <h3>What are the top 3 websites or apps you use everyday?</h3>
+            <div class="response eliana" data-person="eliana">
+                <p><b>Eliana:</b> For apps on my phone I would say Messages, TikTok, and probably Instagram. For my iPad, definitely GoodNotes. For websites, Canvas, Google Calendar, and ChatGPT.</p>
+            </div>
+            <div class="response jason" data-person="jason">
+                <p><b>Jason:</b> Right now I'm watching this show on Netflix right now called Shameless, so that’s probably up there. Number two, YouTube. Number three, Instagram.</p>
+            </div>
+            <div class="response juiling" data-person="juiling">
+                <p><b>Juiling:</b> Email for sure. Then texts/iMessage. Maybe social media wise, Facebook.</p>
+            </div>
+        </article>
+
+        <article class="transcript">
+            <h3>When you open a website or app for the first time, what do you notice first?</h3>
+            <div class="response eliana" data-person="eliana">
+                <p><b>Eliana:</b> I feel like for me colors are a big thing. I definitely heavily associate apps with colors. For the apps I use often, I associate them with specific features and buttons. I see the buttons for the most important features that I use first.</p>
+            </div>
+            <div class="response jason" data-person="jason">
+                <p><b>Jason:</b> Depends on the app or website. Usually I'm going for some kind of content, so whatever it's recommending me on the home page. If I'm doing something like booking a flight or going for a specific purpose, then I'm looking for the key information like the right filters or what I'm looking to do. If I come across a new service for the first time, like a landing page, I would say the first things that stand out to me are probably the header copy and I'm the type of person who usually checks out pricing right away. If I'm interested, maybe I'll click on the CTA.</p>
+            </div>
+            <div class="response juiling" data-person="juiling">
+                <p><b>Juiling:</b> The first thing I usually have to do is log in. I have to enter my username and think about what password I should use. I need to log in to my account for any shopping, so I think that's pretty much the first thing I notice for websites. The other thing would be what am I looking for, which I usually use the search function for. When I'm on Amazon, if I have something in mind I want to buy, I will just search it. Or any of the social media platforms like if I want to see a specific topic. I think the search function is the one I notice the most.</p>
+            </div>
+        </article>
+
+        <article class="transcript">
+            <h3>What makes you keep using a website or app?</h3>
+            <div class="response eliana" data-person="eliana">
+                <p><b>Eliana:</b> Obviously for TikTok the endless scrolling, it's so hard to get out of that. Instagram also has Feed and Reels, so definitely when there's no specific end to something.</p>
+            </div>
+            <div class="response jason" data-person="jason">
+                <p><b>Jason:</b> The most addictive ones are just like content and the stuff you might see for entertainment. If it's not that, it's usually for a very distinct use that I need it for over and over again. For example, if it's Uber and I need to call a car or if it's my Amex and I need to check my finances. Usually for very narrow use cases or entertainment.</p>
+            </div>
+            <div class="response juiling" data-person="juiling">
+                <p><b>Juiling:</b> I don't know. Some are just practical, like when you need to find out things and information. For example, if I want to go to a restaurant, I look at the choices of the restaurants. If I'm traveling, I'm looking up different places to see. I feel like that's very practical and useful, which is why I look up information online on websites.</p>
+            </div>
+        </article>
+
+        <article class="transcript">
+            <h3>What makes you leave or not want to use a website or app again?</h3>
+            <div class="response eliana" data-person="eliana">
+                <p><b>Eliana:</b> If I'm on my phone, I'll leave an app because I'm bored of it usually. If I'm on my computer, I'll leave a website because I'm done using it, it's not responding, or it's too slow. I would say sometimes in rare cases when things are really not user-friendly, I'll just leave because I don't like the experience of using that website or app.</p>
+            </div>
+            <div class="response jason" data-person="jason">
+                <p><b>Jason:</b> There's no reason or purpose for using it.</p>
+            </div>
+            <div class="response juiling" data-person="juiling">
+                <p><b>Juiling:</b> If I have to click through many different buttons to get to what I need to find out, then I just try a different one because it's not worth my time.</p>
+            </div>
+        </article>
+
+        <article class="transcript">
+            <h3>What's a website or app you love? Why?</h3>
+            <div class="response eliana" data-person="eliana">
+                <p><b>Eliana:</b> Just because we've been talking about it a lot, but Spotify. It feels very homey to be on the app and it's extremely intuitive - there's no confusion about where features are or what I'm using the app for.</p>
+            </div>
+            <div class="response jason" data-person="jason">
+                <p><b>Jason:</b> I think a good example is AirBnB. It's very seamless, I like the UI/UX experience as it takes something pretty complex but they have a pretty simple UI and don't make the user make too many decisions. Make a complicated process look simple and easy to manage on the consumer side. Another one I like is Kayak because it kind of already does the grunt work of sorting the flights for you. Google Flights is a much better experience.</p>
+            </div>
+            <div class="response juiling" data-person="juiling">
+                <p><b>Juiling:</b> I think I probably use ChatGPT a little bit more nowadays because if I write something and I'm trying to send it to people, I will just submit it on ChatGPT and let it do it for me. I normally didn't use AI in the past because I used to have dad read my emails to see if I have any grammar mistakes or misspellings, but now I feel like the AI is so much easier as I just copy and paste. It will also ask me if I want to make it shorter or funnier, so I like it a little more.</p>
+            </div>
+        </article>
+
+        <article class="transcript">
+            <h3>What's a website or app you dislike? What makes it frustrating to use?</h3>
+            <div class="response eliana" data-person="eliana">
+                <p><b>Eliana:</b> I find Canvas a really annoying app or website to use. I think it glitches out really often, you can't see the same things you see on your phone or your desktop, and the notifications are whack. Also Workday, hate that. That one is just extremely difficult to use. You can navigate through like 20 different buttons and not get to where you need to be. I hate the idea of there being a website or an app and you have to watch like 5 tutorials to figure out how to even get to the place you need to be to, it's just ridiculous. Same thing with the constant nagging if you haven't filled in one singular thing that was already filled in the past, it just doesn't make sense to me. But yeah, I feel like with apps, I don't like them because they aren't intuitive to use or it's really hard to look at and it's not visually pleasing.</p>
+            </div>
+            <div class="response jason" data-person="jason">
+                <p><b>Jason:</b> Examples of softwares that don't have good user experiences are when you have way too many tabs and stuff going on, and you have decision paralysis as a customer. Have you ever used the Shake Shack ordering terminal? The Shake Shack ordering terminal has way too many steps. If they really think through the user experience, they should be able to get your food within 3-4 clicks of a button, but it takes you maybe 7-8 steps to get through to the end. Most like SAAS products honestly. A really bad one is like Facebook Ads Manager, it's just clunky. Anything that has to do with Facebook's ads business, Accounts Manger, Ads Manager, just way too many steps, very convoluted. Expedia.com. Any of these travel booking sites are usually pretty bad. I don't like stuff that is super clunky.</p>
+            </div>
+            <div class="response juiling" data-person="juiling">
+                <p><b>Juiling:</b> I don't really have a website I dislike actually.</p>
+            </div>
+        </article>
+
+        <article class="transcript">
+            <h3>Has web or app design ever changed how you feel about a brand?</h3>
+            <div class="response eliana" data-person="eliana">
+                <p><b>Eliana:</b> I think one example that comes to mind is Snapchat. I don't use it as much anymore, but when you open the app, you used to be able to see the page with all your friends and chats. Instead they changed it to the discover page with a bunch of ads as the first thing you would see for a bit. That was definitely not what I wanted to see because that's not why I use Snapchat. This definitely made me think whoever implemented that design doesn't really understand consumer preferences and what I was really looking for when I went to use their app. I feel like Google Calendar is a really good app. It's obviously very intuitive and it's very well integrated within all my systems. Anytime I book something online, it will immediately fill that in for me which I find very helpful. I also like the control that it offers in color customization and there's just so many different ways to customize things. However, I really wish you could copy and paste things, it bothers me so much that you can't.</p>
+            </div>
+            <div class="response jason" data-person="jason">
+                <p><b>Jason:</b> I think it can give you positive associations, but if you really need something, then honestly some things can have a really horrible user design but you just gotta go through it. For example, any government software has horrible user design, but it doesn't matter because you still have to pay your parking ticket. Design doesn't really matter for things like that, even though it's a terrible experience. I think that UI/UX is more of like a badge that can help you, but the bigger thing than UI/UX is solving a real problem that actually matters. There are plenty of very beautiful products out there that are useless.</p>
+            </div>
+            <div class="response juiling" data-person="juiling">
+                <p><b>Juiling:</b> I think I usually look up something I know of most of the time. I think the design does affect it. For shopping, if they make their interface easy to scroll up and down and find the product, that would be easier for me to stick with the website longer and shop more. But if it is harder to find things, then I kind of just give up, I don't want to spend that much time on this. Funny enough, the one brand I love is Zara, but their online shopping is not as intuitive. I think they try to make it a little trendier, but I don't like it. I'm a Zara fan, I buy a lot of stuff at Zara, but their website is somewhat not that easy to navigate, so I haven't really wanted to go online and buy a lot of their stuff because it's not very easy to find.</p>
+            </div>
+        </article>
+
+        <article class="transcript">
+            <h3>What's one thing you wish more websites or apps did better?</h3>
+            <div class="response eliana" data-person="eliana">
+                <p><b>Eliana:</b> I think there is something to be said about how far technology has come. I feel like websites should be more advanced by now. Most websites I interact with, especially on my laptop, you click buttons and it opens to a different page, but I feel like at this point we could be more advanced than that. I feel like there are more ways to pique people's interests. I'm drawn to websites that are not only visually pleasing, but also include an interactive element like the panda on Canvas. That is a unique example, but I feel like I don't often see things like that in apps. I think you could go so much further than having a Panda with some confetti, especially with how far AI has come. There are so much more unique features that could be available, but aren't being explored.</p>
+            </div>
+            <div class="response jason" data-person="jason">
+                <p><b>Jason:</b> I don't know, I can't think of anything.</p>
+            </div>
+            <div class="response juiling" data-person="juiling">
+                <p><b>Juiling:</b> I think most of mine are related to online shopping. I really like this price history feature on Amazon now, which tells you what the lowest/highest price point was in the past 30 days. If I don't need anything right away, I will just save it for later and wait until the price drops to buy it. If it's something I really want now, and the price is higher than normal, I will still buy it and then go back and buy it again if the price drops and return it with my original receipt. I'm more conscious about the price, so I will keep track of that, but not every website has that price feature. They often try to send you alerts for sales.</p>
+            </div>
+        </article>
+
+        <br><hr>
+
+        <article id="insights">
+            <h2>Key Insights</h2>
+            <details class="container">
+                <summary>Users often arrive with intent</summary>
+                <div class="transcript">
+                    <div class="eliana">
+                        <p>"I see the buttons for the most important features first."</p>
+                    </div>
+                     <div class="jason">
+                        <p>"I'm looking for key information like the right filters or what I want to do."</p>
+                    </div>
+                    <div class="juiling">
+                        <p>"The search function is the one I notice the most."</p>
+                    </div>
+                </div><br>
+                <p><i>Key Takeaway:</i> users do not passively view interfaces - they immediately scan for actions that support their goal</p>
+                <p><i>Design principle:</i> prioritize clear actions cues like search, filtering, and navigation</p>
+            </details>
+            <details class="container">
+                <summary>Color functions as identity and recognition</summary>
+                <div class="transcript">
+                    <div class="eliana">
+                        <p>"Colors are a big thing. I definitely heavily associate apps with colors."</p>
+                    </div>
+                </div><br>
+                <p><i>Key takeaway:</i> color acts as a cognitive shortcut that shapes recognition, memory, and interface familiarity</p>
+                <p><i>Design principle:</i> consistent color systems reinforce brand identity, improve wayfinding, and stabilize user mental models</p>
+            </details>
+            <details class="container">
+                <summary>Friction emerges from too many steps and decisions</summary>
+                <div class="transcript">
+                    <div class="eliana">
+                        <p>"Workday is extremely difficult to use. You can navigate through like 20 different buttons and not get to where you need to be."</p>
+                    </div>
+                    <div class="jason">
+                        <p>"The Shake Shack ordering terminal has way too many steps. It takes you about 7-8 steps to get through to the end."</p>
+                    </div>
+                    <div class="juiling">
+                        <p>"If I have to click through many different buttons to get to what I need, then I'll just try something else because it's not worth my time."</p>
+                    </div>
+                </div><br>
+                <p><i>Key takeaway:</i> poor experiences are often driven by decision overload</p>
+                <p><i>Design princple:</i> minimize unnecessary decisions, reduce steps, and shorten task completion paths</p>
+            </details>
+            <details class="container">
+                <summary>Great UX makes complex tasks feel simple</summary>
+                <div class="transcript">
+                    <div class="eliana">
+                        <p>"AirBnB makes a complicated process look simple and easy to manage on the consumer side."</p>
+                    </div>
+                    <div class="jason">
+                        <p>"Spotify is extremely intuitive - there's no confusion about where features are or what I'm using the app for."</p>
+                    </div>
+                    <div class="juiling">
+                        <p>"Now I feel like AI is so much easier - I just copy and paste in ChatGPT."</p>
+                    </div>
+                </div><br>
+                <p><i>Key takeaway:</i> users perceive strong design through ease, clarity, and effort reduction</p>
+                <p><i>Design principle:</i> guide decisions, hide complexity, and align interactions with user expectations/p>
+            </details>
+            <details class="container">
+                <summary>Better UX extends beyond visual aesthetics</summary>
+                <div class="transcript">
+                    <div class="eliana">
+                        <p>"Endless scrolling is so hard to get out of."</p>
+                    </div>
+                    <div class="juiling">
+                        <p>“I really like this price history feature on Amazon now.”</p>
+                    </div>
+                </div><br>
+                <p><i>Key takeaway:</i> experiences are shaped by utility, feedback, and decision support, not just visual refinement</p>
+                <p><i>Design principle:</i> features that reduce uncertainty or shape behavior can be more impactful than visual polish</p>
+            </details>
+            <details class="container">
+                <summary>Design quality depends on the context</summary>
+                <div class="transcript">
+                    <div class="jason">
+                        <p>"Government software has horrible design, but you still have to pay your parking ticket."</p>
+                    </div>
+                    <div class="jason">
+                        <p>“There are plenty of very beautiful products that are useless.”</p>
+                    </div>
+                </div><br>
+                <p><i>Key takeaway:</i> visual elegance cannot replace functionality, and poor design may be tolerated when necessity is high</p>
+                <p><i>Design principle:</i> UX effectiveness depends on context and user needs — not aesthetics alone</p>
+            </details>
+        </article>
+
+        <footer>
+            <p>Visual Principles of Screen • Spring 2026 • Interview Project</p>
+        </footer>
+    </main>
+
+    <script>
+        const cards = document.querySelectorAll("#profiles .profile-card");
+        const responses = document.querySelectorAll(".transcript .response");
+        const showAllButton = document.querySelector("#show-all");
+
+        const showAllResponses = () => {
+            responses.forEach(response => {
+                response.style.display = "block";
+            });
+        };
+
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                const person = card.dataset.person;
+
+                responses.forEach(response => {
+                    response.style.display =
+                        response.dataset.person === person ? "block" : "none";
+                });
+            });
+        });
+
+        showAllButton.addEventListener("click", showAllResponses);
+    </script>
+</body>
+</html>
